@@ -1,0 +1,60 @@
+header {
+    background-color: rgb(243, 243, 243);
+    border-bottom: 2px solid black ;
+}
+header *{
+    color: black;
+}
+
+header img {
+    border: 1px solid black;
+}
+
+h2 {
+    border-bottom: solid red 2px ;
+}
+
+header a:hover {
+    color: red;
+}
+
+aside >img {
+    border: solid 2px rgba(255, 240, 211, 0.918);
+}
+
+
+/* SAE */
+
+
+
+.Prjt {
+    color: black;
+    background-color: rgba(255, 240, 211, 0.918);
+}
+
+.MoreI{
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    transition: 0.2s ease;
+}
+
+.MoreI:hover{  
+    background-color: rgba(0, 0, 0, 0.623);
+    
+}
+
+.red {
+    color: red;
+}
+
+figcaption{
+    color: grey;
+}
+
+
+/* footer*/
+
+footer {
+    color: aliceblue;
+    background-color: rgb(70, 70, 70);
+}

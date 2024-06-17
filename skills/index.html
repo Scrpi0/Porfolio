@@ -22,56 +22,56 @@
               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#">
+                        <a class="nav-link " href="../projects/index.html">
                         Mes Projets
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li><h6 class="dropdown-header">Réseau</h6></li>
-                            <li><a class="dropdown-item" href="#">Infrastructure</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="../projects/pms.html">Infrastructure P.M.S.</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><h6 class="dropdown-header">Dévellopement</h6></li>
-                            <li><a class="dropdown-item" href="#">c</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><h6 class="dropdown-header">Développement</h6></li>
+                            <li><a class="dropdown-item" href="../projects/ead.html">Elite Automation Demo.</a></li>
+                            <li><a class="dropdown-item" href="../projects/casa.html">CASA</a></li>
+                            <li><a class="dropdown-item" href="../projects/gamme.html">GAMME</a></li>
+                            <li><a class="dropdown-item" href="../projects/thegame.html">The Gamme</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Base de Données</h6></li>
+                            <li><a class="dropdown-item" href="../projects/BD1.html">Titanic</a></li>
+                            <li><a class="dropdown-item" href="../projects/Accidentologie.html">Accidentologie</a></li>
+
+
+
 
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link " href="#">
+                        <a class="nav-link " href="../skills/index.html">
                         Mes Compétences
                         </a>
                         <ul class="dropdown-menu dropdown-menu-light">
                             <li><h6 class="dropdown-header">Langages</h6></li>
-                            <li><a class="dropdown-item" href="#">C/C++</a></li>
-                            <li><a class="dropdown-item" href="#">Java</a></li>
-                            <li><a class="dropdown-item" href="#">Python</a></li>
-                            <li><a class="dropdown-item" href="#">Javascript</a></li>
-                            <li><a class="dropdown-item" href="#">R</a></li>
-
-                            <li><hr class="dropdown-divider"></li>
-                            <li><h6 class="dropdown-header">Rel</h6></li>
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#c">C/C++</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#java">Java</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#pyhton">Python</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#js">Javascript</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#sql">SQL</a></li>
+                            <li><a class="dropdown-item" href="../skills/index.html#r">R</a></li>
 
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">Me contacter</a>
+                        <a class="nav-link " aria-current="page" href="../index.html#contact">Me contacter</a>
                     </li>
                 </ul>
               </div>
             </div>
-          </nav>
-        
+        </nav>
     </header>
     <div class ="container ">
-        <div class="row mt-5 justify-content-around">
+        <div id="c" class="row mt-5 justify-content-around">
             <div class="col-10">
                 <div class="row">
                     <article>
@@ -96,7 +96,7 @@
             </div>
         </div>
         <!-- JAVA -->
-        <div class="row mt-5 justify-content-around">
+        <div id="java" class="row mt-5 justify-content-around">
             <div class="col-10">
                 <div class="row">
                     <article>
@@ -120,8 +120,32 @@
                 </div>
             </div>
         </div>
+        <div id="python" class="row mt-5 justify-content-around">
+            <div class="col-10">
+                <div class="row">
+                    <article>
+                        <h3 class="fitcontent">Python</h3>
+                        <p> .j'ai quelques réal. en cpp :</p>
+                    </article>
+                    
+                </div>
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card cardexpend" >
+                            <img src="img/sql.png" class="card-img-top h200fit"  alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <h5 class="card-title ">Elite Automation Demonstrator</h5>
+                              <p class="card-text ">il s'agit d'un outil d'automation de démonstrations pour l'Elite Smart Gateway, un produit dévellopé par VOGO.</p>
+                              <a href="#" class="card-link ">En savoir plus</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- javaScript -->
-        <div class="row mt-5 justify-content-around">
+        <div id="js" class="row mt-5 justify-content-around">
             <div class="col-10">
                 <div class="row">
                     <article>
@@ -145,17 +169,62 @@
                 </div>
             </div>
         </div>
-        <section>
-            <h2 id="Me_Contacter">Me Contacter</h2>
-            <span> Vous pouvez me contacter directement par Mail : <a href="mailto : clement.scheer@etu.univ-grenoble-alpes.fr">clement.scheer@etu.univ-grenoble-alpes.fr</a></span>
-            <span>Ou bien par téléphone : <a href="tel:+33783432511"> +33783432511</a></span>
-            <h3>Retrouvez-moi aussi sur :</h3><a href="https://www.linkedin.com/in/cl%C3%A9ment-scheer-68745b27a/"><img src="img/linkedin.png" alt="linkedin" height="40px"></a>
-        </section>
+        <div id="sql" class="row mt-5 justify-content-around">
+            <div class="col-10">
+                <div class="row">
+                    <article>
+                        <h3 class="fitcontent">SQL</h3>
+                        <p> .j'ai quelques réal. en cpp :</p>
+                    </article>
+                    
+                </div>
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card cardexpend" >
+                            <img src="img/sql.png" class="card-img-top h200fit"  alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <h5 class="card-title ">Elite Automation Demonstrator</h5>
+                              <p class="card-text ">il s'agit d'un outil d'automation de démonstrations pour l'Elite Smart Gateway, un produit dévellopé par VOGO.</p>
+                              <a href="#" class="card-link ">En savoir plus</a>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="r" class="row mt-5 justify-content-around">
+            <div class="col-10">
+                <div class="row">
+                    <article>
+                        <h3 class="fitcontent">R</h3>
+                        <p> .j'ai quelques réal. en cpp :</p>
+                    </article>
+                    
+                </div>
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card cardexpend" >
+                            <img src="img/sql.png" class="card-img-top h200fit"  alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <h5 class="card-title ">Elite Automation Demonstrator</h5>
+                              <p class="card-text ">il s'agit d'un outil d'automation de démonstrations pour l'Elite Smart Gateway, un produit dévellopé par VOGO.</p>
+                              <a href="#" class="card-link ">En savoir plus</a>
 
-    <footer class="text-bg-dark">
-        <span>© Tous droits réservés - Portfolio - SCHEER Clément</span>
-    </footer>
-    <script src="../js/bootstrap.bundle.js"></script>
-</body>
-</html>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class=" text-bg-dark">
+            <span>Portfolio - SCHEER Clément</span>
+                <span >Retrouvez-moi aussi sur :
+                    <a href="https://www.linkedin.com/in/cl%C3%A9ment-scheer-68745b27a/"><img src="../img/contact/linkedin.png" alt="linkedin" height="40px"></a>
+                    <a href="https://github.com/Scrpi0"><img src="../img/contact/github.png" alt="github" height="40px"></a>
+                </span>
+        </footer>
+        <script src="../js/bootstrap.bundle.js"></script>
+    </body>
+    </html>

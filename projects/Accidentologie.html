@@ -5,50 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/white.css">
-    <title>Accidentologie - SCHEER Clément</title>
+   <!--  <link rel="stylesheet" href="style/white.css"> -->
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <title>Portfolio - SCHEER Clément</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html"><img src="../img/pic.jpg" alt="" ></a>
-            <ul>
-                <li><a href="../index.html#Accueil">Accueil</a></li>
-                <li><a href="../index.html#Mes_projets">Mes Projets</a></li>
-                <li><a href="../index.html#Me_Contacter">Me Contacter</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Accidentologie</h2>
-            <div>
-                <article>
-                    <h3>Introduction</h3>
-                    <p>L'accidentologie est un domaine qui dans notre cas a necessité de lier différentes compétences.</p>
-                    <p>D'une part en SQL, il nous était fournis plusieurs jeux de données concernant les accidents en France durant ces dernières années. </p>
-                    <p>Avec mon binôme nous avons dû formatter les données pour qu'elles puissent être traitées indifféremment, puis nous avons dû extraire les données que nous recherchions, celles concernant les personnes de plus de 65 ans en nouvelle Aquitaine.</p>
-                    <p>Puis nous nous sommes ensuite servis de ces données avec R pour réaliser différents graphiques sur ces accidents, dans notre dommaine d'étude.</p>
-                </article>
-                <article>
-                    <h3>Extrait Nettoyage</h3>
-                    <figure>
-                        <img src="../img/Acc/Nettoyage.bmp" alt="">
-                        <figcaption>Nettoyage & formatage des vues caractéristiques</figcaption>
-                    </figure>
-                    <h3>Exemple de graphique</h3>
-                    <figure>
-                        <img src="../img/Acc/graph.bmp" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </article>
-            </div>
-        </section>
-        
-    </main>
-    <footer>
-        <span>© Tous droits réservés - Portfolio - SCHEER Clément</span>
-    </footer>
+    <header class="sticky-top">
 
+        <nav class="navbar navbar-expand-lg  bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">C.SCHEER</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">
+                        Mes Projets
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><h6 class="dropdown-header">Réseau</h6></li>
+                            <li><a class="dropdown-item" href="#">Infrastrucure</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Dévellopement</h6></li>
+                            <li><a class="dropdown-item" href="#">c</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#">
+                        Mes Compétences
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><h6 class="dropdown-header">Langages</h6></li>
+                            <li><a class="dropdown-item" href="#">C/C++</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">R</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Rel</h6></li>
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Me contacter</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+    </header>
+    <div class="container">
+        <!-- title + 1 phrase -->
+        <div class="row">
+            <div><h1>Accidentologie</h1></div>
+            
+            <p>Annalyse sur les accidents de la route en France</p>
+        </div>
+        <!-- presentation (resumé + fiche ) -->
+        <div class="row justify-content-around px-5">
+            <div class="col-md-6">
+                <h3>Résumé</h3>
+                <p>L'accidentologie est un domaine qui dans notre cas a necessité de lier différentes compétences.</p>
+                <p>D'une part en SQL, il nous était fournis plusieurs jeux de données concernant les accidents en France durant ces dernières années. </p>
+                <p>Avec mon binôme nous avons dû formatter les données pour qu'elles puissent être traitées indifféremment, puis nous avons dû extraire les données que nous recherchions. Dans notre cas, il s'agissait des personnes de plus de 65 ans en nouvelle Aquitaine.</p>
+                <p>Puis nous nous sommes ensuite servis de ces données avec R pour réaliser différents graphiques sur ces accidents, dans notre dommaine d'étude.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Quelques points</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Chef de projet :
+                        <span class="badge bg-primary rounded-pill">-</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Effectif :
+                        <span class="badge bg-primary rounded-pill">2</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Année de création :
+                        <span class="badge bg-primary rounded-pill">2023</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Langages utilisés :
+                        <!-- <img class="img-fluid " src="../img/languages/cpp.png" alt="C++"> -->
+                         <span>
+                            <span class="badge bg-black rounded-pill">SQL</span>
+                            <span class="badge bg-info rounded-pill">R</span>
+                        </span>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+
+        <!-- carousel -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-7">
+                <h4 class="my-3">Aperçu</h4>
+                <div id="carousel" class=" rounded  shadow-lg carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"  aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/Acc/nettoyage.png" class="d-block w-100 " alt="Nettoyage de la base de données">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Acc/graph.bmp" class="d-block w-100 " alt="Exemple de graphique ">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class=" text-bg-dark">
+        <span>Portfolio - SCHEER Clément</span>
+            <span >Retrouvez-moi aussi sur :
+                <a href="https://www.linkedin.com/in/cl%C3%A9ment-scheer-68745b27a/"><img src="img/contact/linkedin.png" alt="linkedin" height="40px"></a>
+                <a href="https://github.com/Scrpi0"><img src="img/contact/github.png" alt="github" height="40px"></a>
+            </span>
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

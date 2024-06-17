@@ -5,111 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/white.css">
+   <!--  <link rel="stylesheet" href="style/white.css"> -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <title>Portfolio - SCHEER Clément</title>
 </head>
 <body>
-    <header>
-        <nav>
-                <a href=""><img src="img/pic.jpg" alt="" ></a>
-                <ul>
-                    <li><a href="index.html#Accueil">Accueil</a></li>
-                    <li><a href="index.html#Mes_projets">Mes Projets</a></li>
-                    <li><a href="index.html#Me_Contacter " >Me Contacter</a></li>
+    <header class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg  bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">C.SCHEER</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="projects/index.html">
+                        Mes Projets
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><h6 class="dropdown-header">Réseau</h6></li>
+                            <li><a class="dropdown-item" href="#">Infrastructure P.M.S.</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Développement</h6></li>
+                            <li><a class="dropdown-item" href="#">Elite Automation Demo.</a></li>
+                            <li><a class="dropdown-item" href="#">CASA</a></li>
+                            <li><a class="dropdown-item" href="#">GAMME</a></li>
+                            <li><a class="dropdown-item" href="#">ludoEdu</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><h6 class="dropdown-header">Base de Données</h6></li>
+                            <li><a class="dropdown-item" href="#">Titanic</a></li>
+                            <li><a class="dropdown-item" href="#">Accidentologie</a></li>
+
+
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="skills/index.html">
+                        Mes Compétences
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><h6 class="dropdown-header">Langages</h6></li>
+                            <li><a class="dropdown-item" href="#">C/C++</a></li>
+                            <li><a class="dropdown-item" href="#">Java</a></li>
+                            <li><a class="dropdown-item" href="#">Python</a></li>
+                            <li><a class="dropdown-item" href="#">Javascript</a></li>
+                            <li><a class="dropdown-item" href="#">SQL</a></li>
+                            <li><a class="dropdown-item" href="#">R</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">Me contacter</a>
+                    </li>
                 </ul>
+              </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2 id="Accueil">Accueil</h2>
-            <div class="Prst">
-                <aside><img src="img/pic.jpg" alt="" height="300px"></aside>
-                <div>
+    <div class ="container ">
+        <div class="row mt-4 justify-content-around gy-2">
+            <div class="col-5 col-lg-3">
+                <img src="img/pic.jpg" class="img-fluid img-thumbnail " alt="" >
+                <p class="text-center"> Clément Scheer</p>
+            </div>
+            <div class="col-10 col-lg-7">
+                <article>
+                    <h3>Qui suis-je ?</h3>
+                    <p>Bienvenue sur mon portfolio,
+                        Je m'appelle Clément Scheer ,<br> je suis un étudiant en 1re année de BUT Informatique à l'iut2 de Grenoble.
+                        J'ai une passion pour l'informatique et j'ai entrepris plusieurs projets que vous trouverez plus bas.
+                       <p>Je suis capable de coder en Java, SQL, R, Javascript, Assembleur, HTML, CSS et de m'adapter à plein d'autres langages de programmation.</p> 
+                        Je suis plutôt aisé pour parler anglais mais je possède aussi des bases d'espagnol. 
+                        Je suis capable de résister à la pression et de conquérir toutes les situations et j'ai une facilité à travailler en groupe ainsi qu'à gérer une équipe.
+                    </p>
+                </article>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-around">
+            <div class="col-10">
+                <div class="row">
                     <article>
-                        <h3>Qui suis-je ?</h3>
-                        <p>Bienvenue sur mon portfolio,
-                            Je m'appelle Clément Scheer ,<br> je suis un étudiant en 1re année de BUT Informatique à l'iut2 de Grenoble.
-                            J'ai une passion pour l'informatique et j'ai entrepris plusieurs projets que vous trouverez plus bas.
-                           <p>Je suis capable de coder en Java, SQL, R, Javascript, Assembleur, HTML, CSS et de m'adapter à plein d'autres langages de programmation.</p> 
-                            Je suis plutôt aisé pour parler anglais mais je possède aussi des bases d'espagnol. 
-                            Je suis capable de résister à la pression et de conquérir toutes les situations et j'ai une facilité à travailler en groupe ainsi qu'à gérer une équipe.
-                        </p>
+                        <h3 class="fitcontent">Mes Projets</h3>
+                        <p>Voici une liste non exhaustive de projets auxquels j'ai pris part</p>
                     </article>
+                    
+                </div>
+                <div class="row gy-5">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card cardexpend" >
+                            <img src="img/PMS/network.png" class="card-img-top h200fit"  alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <h5 class="card-title ">Pimp My SKi</h5>
+                              <p class="card-text ">Mise en place d'une infrastructure réseau pour PMS.</p>
+                              
+                              <a href="#" class="card-link ">En savoir plus</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card cardexpend" >
+                            <img src="img/EAD/ead.jpg" class="card-img-top h200fit" alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                            <h5 class="card-title">Elite Automation Demonstrator</h5>
+                            <p class="card-text">Un outil d'automation de démonstrations pour l'Elite Smart Gateway, un produit dévellopé par VOGO.</p>
+                            <a href="#" class="card-link">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card cardexpend " >
+                            <img src="img/CASA/affiche.png" class="card-img-top h200fit" alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <h5 class="card-title">Comment Avoir Son Année</h5>
+                              <p class="card-text">Un jeu de simulation en 2D qui vous met à la place d'un étudiant qui se prépare à passer ses partiels</p>
+                              <a href="#" class="card-link">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="cardexpend card " >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Simple_light_bulb_graphic.png" class="card-img-top h200fit" alt="...">
+                            <div class="card-body bg-success " style="--bs-bg-opacity: .3;">
+                              <a href="projects/index.html" class="btn btn-warning mt-1">Voir plus de projets !</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section>
-        <section>
-            <h2 id="Mes_projets">Mes projets</h2>
-            <span>Vous trouverez ci-dessous différents projets auxquels j'ai pris part.</span>
-
-            <div class=" PrjtM">
-
-                <a class="Prjt" href="BD1.html">
-                    <figure>
-                        <img src="img/sql.png" alt="" height="">
-                    </figure>
-                    <span>Création d'une base de données</span>
-                    <div class="MoreI">
-                        <span >En savoir plus</span>
+        </div>
+        <div class="row mt-5 justify-content-around">
+            <div class="col-10">
+                <div class="row">
+                    <article>
+                        <h3 class="fitcontent">Mes Langages</h3>
+                        <p>Voici les langages que j'ai eu l'ocasion d'expérimenter :</p>
+                    </article>
+                    
+                </div>
+                <div class="row gy-2 align-items-center">
+                    <div class="col-3  col-md-3 col-lg-1">
+                        <a href="#">
+                            <img src="img/languages/java.png" class=" rounded-circle img-fluid" alt="Java">
+                        </a>
                     </div>
-                </a>
-                <a class="Prjt" href="IADepeches.html">
-                    <figure>
-                        <img src="img/java.png" alt="" height="">
-                    </figure>
-                    <span>Trie de Dépèches & Optimisation</span>
-                    <div class="MoreI">
-                        <span >En savoir plus</span>
+                    <div class="col-3  col-md-3 col-lg-1">
+                        <a href="#">
+                            <img src="img/languages/cpp.png" class=" img-fluid" alt="C++">
+                        </a>
                     </div>
-                </a>
-                <a class="Prjt" href="Installation_Poste_Dev.html">
-                    <figure>
-                        <img src="img/free-debian.png" alt="" height="">
-                    </figure>
-                    <span>Installation d'un poste de développement</span>
-                    <div class="MoreI">
-                        <span >En savoir plus</span>
+                    <div class="col-3  col-md-3 col-lg-1">
+                        <a href="#">
+                            <img src="img/languages/c.png" class=" img-fluid" alt="C">
+                        </a>
                     </div>
-                </a>
-                <a class="Prjt" href="RecueilBesoinsESN.html">
-                    <figure>
-                        <img src="img/CGI.png" alt="" height="">
-                    </figure>
-                    <span>Recueil de besoins d'une ESN</span>
-                    <div class="MoreI">
-                        <span >En savoir plus</span>
+                    <div class="col-3  col-md-3 col-lg-1">
+                        <a href="#">
+                            <img src="img/languages/python.png" class="rounded-circle img-fluid" alt="Python">
+                        </a>
                     </div>
-                </a>
-                <a class="Prjt " >
-                    <figure>
-                        <img src="img/guide_book.png" alt="" height="">
-                    </figure>
-                    <span>Installation de services réseaux</span>
-                    <div class="MoreI red">
-                        <span >Indisponible </span>
+                    <div class="col-3  col-md-3 col-lg-1 ">
+                        <a href="#">
+                            <img src="img/languages/php.png" class="rounded-circle img-fluid" alt="PhP">
+                        </a>
                     </div>
-                </a>
-                <a class="Prjt" href="Accidentologie.html">
-                    <figure>
-                        <img src="img/bar.png" alt="" height="">
-                    </figure>
-                    <span>Accidentologie</span>
-                    <div class="MoreI">
-                        <span >En savoir plus</span>
+                    <div class="col-3  col-md-3 col-lg-1 ">
+                        <a href="#">
+                            <img src="img/languages/javascript.png" class="img-fluid" alt="JS">
+                        </a>
                     </div>
-                </a>
-                
+                    <div class="col-3  col-md-3 col-lg-1 ">
+                        <a href="#">
+                            <img src="img/languages/sql.png" class="img-fluid" alt="SQL">
+                        </a>
+                    </div>
+                    <div class="col-3  col-md-3 col-lg-1 ">
+                        <a href="#">
+                            <img src="img/languages/r.png" class="img-fluid" alt="R">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-            <h2 id="Me_Contacter">Me Contacter</h2>
-            <span> Vous pouvez me contacter directement par Mail : <a href="mailto : clement.scheer@etu.univ-grenoble-alpes.fr">clement.scheer@etu.univ-grenoble-alpes.fr</a></span>
-            <span>Ou bien par téléphone : <a href="tel:+33783432511"> +33783432511</a></span>
-            <h3>Retrouvez-moi aussi sur :</h3><a href="https://www.linkedin.com/in/cl%C3%A9ment-scheer-68745b27a/"><img src="img/linkedin.png" alt="linkedin" height="40px"></a>
-        </section>
-    </main>
-    <footer>
-        <span>© Tous droits réservés - Portfolio - SCHEER Clément</span>
+        </div>
+    
+        <div class="row mt-5 justify-content-around  pt-2 " >
+            <div><h3 >Me Contacter</h3></div>
+            <div class="col-5 border border-primary bg-primary rounded pb-1" style="--bs-bg-opacity: .1;">
+                <form action="https://formspree.io/f/mknddkal" method="POST">
+                    <div class="pt-2">
+                        <label for="mail" class="form-label" >Votre adresse Mail:</label>
+                        <input id="mail" class="form-control" type="email" name="email">
+                    </div>
+                    <div class="pt-2">
+                        <label for="message" class="form-label">Votre message:</label>     
+                        <textarea id="message" class="form-control" name="message"></textarea>
+                    </div>
+                        <div class="pt-2">
+                        <button class="btn btn-primary" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>   
+    <footer class=" text-bg-dark">
+        <span>Portfolio - SCHEER Clément</span>
+            <span >Retrouvez-moi aussi sur :
+                <a href="https://www.linkedin.com/in/cl%C3%A9ment-scheer-68745b27a/"><img src="img/contact/linkedin.png" alt="linkedin" height="40px"></a>
+                <a href="https://github.com/Scrpi0"><img src="img/contact/github.png" alt="github" height="40px"></a>
+            </span>
     </footer>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

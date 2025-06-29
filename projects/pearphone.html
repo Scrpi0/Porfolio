@@ -38,7 +38,7 @@
                             <li><a class="dropdown-item" href="../projects/ead.html">Elite Automation Demo.</a></li>
                             <li><a class="dropdown-item" href="../projects/casa.html">CASA</a></li>
                             <li><a class="dropdown-item" href="../projects/gamme.html">GAMME</a></li>
-                            <li><a class="dropdown-item" href="../projects/thegame.html">The Gamme</a></li>
+                            <li><a class="dropdown-item" href="../projects/thegame.html">The Game</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><h6 class="dropdown-header">Base de Données</h6></li>
                             <li><a class="dropdown-item" href="../projects/BD1.html">Titanic</a></li>
@@ -75,20 +75,19 @@
     <div class="container">
         <!-- title + 1 phrase -->
         <div class="row mt-5">
-            <div><h1>The GAME</h1></div>
-            <p>Un logiciel ludo-educatif qui aide les lycéens à progresser en NSI.</p>
+            <div><h1>Architecture réseau PearPhone</h1></div>
+            <p>Projet Univeristaire : Mise en place d'une infrastructure réseau et protection contre les menaces pour l'entreprise (fictive) PearPhone</p>
         </div>
         <!-- presentation (resumé + fiche ) -->
-        <div class="row justify-content-around mt-3 px-5">
+        <div class="row justify-content-around px-5">
             <div class="col-md-6">
                 <h3>Résumé</h3>
                 <p>
-                    The GAME est un jeu en ligne éducatif destiné aux élèves de la spécialité NSI en Première et Terminale.
+                    L'entreprise (fictive) Pearphone a chargé notre équipe de concevoir et déployer une nouvelle infrastructure pour son réseau d'entreprise.
                 </p>
-                    Ce jeu permet de réviser les différents acquis au travers d'enigmes à la manière d'un escape game.
-                    Il offre aussi la possibilité au professeur d'avoir un suivi de ses élèves au travers des différents niveaux.
-                <p> 
-                    
+                <p>
+                    Ils avaient entre autres besoin d'un serveur web pour héberger leur site commercial, de bases de données ainsi que d'autres outils pour assurer le fonctionnement de leur infrastructure.
+                    La sécurité est au coeur des préocupations de ce projet compte tenu des informations sensibles qui transitent au travers de l'infrastructure (comptes clients, coordonnées bancaires, etc).
                 </p>
             </div>
             <div class="col-md-4">
@@ -96,24 +95,20 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Chef de projet :
-                        <span class="badge bg-primary rounded-pill">M. RODRIGUEZ</span>
+                        <span class="badge bg-primary rounded-pill">M. SCHEER</span>
                       </li>
                       <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Effectif :
-                        <span class="badge bg-primary rounded-pill">6</span>
+                        Nombre de personnes :
+                        <span class="badge bg-primary rounded-pill">3</span>
                       </li>
                       <li class="list-group-item d-flex justify-content-between align-items-center">
                         Année de création :
-                        <span class="badge bg-primary rounded-pill">2023</span>
+                        <span class="badge bg-primary rounded-pill">2024</span>
                       </li>
                       <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Langages utilisés :
+                        Outils utilisés :
                         <!-- <img class="img-fluid " src="../img/languages/cpp.png" alt="C++"> -->
-                        <span>
-                            <span class="bg-black badge rounded-pill">SQL</span>
-                            <span class="bg-warning badge rounded-pill">Javascript</span>
-                            <span class="bg-black badge rounded-pill">Rust</span>
-                        </span>
+                         <span class="badge bg-black rounded-pill">MIT-Kerberos, Metasploit, Wireguard<br> Suricata, rsyslogd, SpamAssassin, Zabbix,</span>
                       </li>
                   </ul>
             </div>
@@ -131,13 +126,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../img/the_game/logo.png" class="d-block w-100 " alt="logo the_game">
+                            <img src="../img/pearphone/fluxpearphone.bmp" class="d-block w-100 " alt="...">
                         </div>
                         <div class="carousel-item ">
-                            <img src="../img/the_game/shell.png" class="d-block w-100 " alt="shell">
+                            <img src="../img/pearphone/fluxpearphone2.bmp" class="d-block w-100 " alt="...">
                         </div>
                         <div class="carousel-item ">
-                            <img src="../img/the_game/grep.png" class="d-block w-100 " alt="shell">
+                            <img src="../img/pearphone/metasploit.bmp" class="d-block w-100 " alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -153,14 +148,20 @@
         </div>
 
         <!-- contribution -->
-        <div class="row justify-content-center mt-3">
-            <div class="col-10">
-                <div><h3 class="my-3">Ma contribution</h3></div>
-                Dans un premier temps, j'ai réalisé les vues du site. Cela concerne les différentes pages qui seront affichées comme les pages de connections, les pages récapitulatives des scores, les pages de progressions.
-                Ensuite j'ai procedé à la mise en place d'une base de données pour conserver toutes les informations sur les utilisateurs et les différents niveaux.
-                Finalement je me suis dédié à la réalisation d'un des supports des énignes. Il s'agit d'un SHELL, réalisé entièrement en JavaScript.
-            </div>
+        <div class="row">
+            <div><h3 class="my-3">Ma contribution</h3></div>
+            
+            <p>
+                Dans un premier temps, les efforts de l'équipe se sont dirigés vers la conception d'une architecture adaptée aux besoins et sécurisée. Durant cette phase nous avont aussi effectué une analyse des différentes solutions logicielles envisageables. A titre personnel et en complément des éléments précédents, je me suis intéressé aux différents flux de données induits par les services du réseau pour en dégager diverses règles de pare-feu.
+            </p>
+            <p> Lors d'une première phase de réalisation, nous avons installé les différents services envisagés. Pour ma part, j'ai procédé à l'installation des services DHCP, d'outils de monitoring et journalisation (Zabbix et rsyslogd), de la mise en place des routeurs et des pare-feux du réseau, d'un contrôleur de domaine (Openldap + Kerberos-MIT) et d'un serveur VPN.</p>
+            <p>
+                Lors de la phase suivante, nous avons mis en place des systèmes de détection d'intrusion et des logiciels Antispam pour les services de messagerie électronique. Pour ma part, j'ai testé la sécurité du réseau et l'efficacité des outils en effectuant divers tests de pénétration. Cela a notament été réalisé à l'aide de l'outil Metasploit.
+            </p>
         </div>
+
+
+
     </div>
     <footer class=" text-bg-dark">
         <span>Portfolio - SCHEER Clément</span>
